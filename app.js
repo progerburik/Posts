@@ -37,9 +37,12 @@ dislikesEl.onclick = function () {
 postImgBodyEl.appendChild(likesEl);
 postImgBodyEl.appendChild(dislikesEl);
 
+rootEl.appendChild(postImgEl);
+console.log(postImgEl);
+
 const postVideo = {
     content: 'Видео на страничке',
-    videoUrl: 'https://r1---sn-xguxaxjvh-31oe.googlevideo.com/videoplayback?expire=1571249881&ei=eQqnXZasH8-RyQW5r6XYDA&ip=188.234.60.9&id=o-AGL8beUhwz-wrsKlRXtjS3cPzLZALks0j2Qxt6Jg7oSp&itag=18&source=youtube&requiressl=yes&mm=31%2C29&mn=sn-xguxaxjvh-31oe%2Csn-n8v7kn7s&ms=au%2Crdu&mv=m&mvi=0&pl=26&initcwndbps=1613750&mime=video%2Fmp4&gir=yes&clen=15982444&ratebypass=yes&dur=230.690&lmt=1537914482705888&mt=1571228203&fvip=14&fexp=23842630&c=WEB&txp=5531332&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cmime%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&lsparams=mm%2Cmn%2Cms%2Cmv%2Cmvi%2Cpl%2Cinitcwndbps&lsig=AHylml4wRQIhALj5V_C4z7m3TVWBT7rhCinpWOVHj5Hew9jJwG8LrVtnAiBfoMRhBGlloW8eR6p2wrw6ADDtLR0-aymR_JcJrO9m7Q%3D%3D&sig=ALgxI2wwRgIhAPjLYU34LBStYmYFSao6rrRSvBUKnW49Rtr360E_ZmaDAiEAshfKphnjaLQ_1seumqOk0ZuHp5bhfYcopgq0luESoN0%3D',
+    videoUrl: 'https://r6---sn-n8v7kne7.googlevideo.com/videoplayback?expire=1571503800&ei=V-qqXeDDONaQyAW1-I2ACw&ip=188.234.48.1&id=o-AFpVGTlITCNHCf0rXUo0s8Q-TDIMqHmVtfndjFCNILI7&itag=18&source=youtube&requiressl=yes&mime=video%2Fmp4&gir=yes&clen=15424289&ratebypass=yes&dur=214.157&lmt=1570386235881366&fvip=6&fexp=9466588,23842630&beids=9466588&c=WEB&txp=5531432&sparams=expire%2Cei%2Cip%2Cid%2Citag%2Csource%2Crequiressl%2Cmime%2Cgir%2Cclen%2Cratebypass%2Cdur%2Clmt&sig=ALgxI2wwRQIhAOeNgBZjNOWQb-O-9jzezURp946GXHZw1MR918SLatn3AiAoO6vp3rwyBuf87XPwJQ6AwTB-H0GiTIV-Ii3m6oe2dg%3D%3D&redirect_counter=1&cm2rm=sn-xguxaxjvh-31oe7l&req_id=7e7fd010d0d1a3ee&cms_redirect=yes&mm=29&mn=sn-n8v7kne7&ms=rdu&mt=1571482123&mv=m&mvi=5&pl=26&lsparams=mm,mn,ms,mv,mvi,pl&lsig=AHylml4wRQIgOxGoiDctZx-CyVXfctFom1f0E4pXmaQ5WcCMdvKoGI4CIQCDfvDxsRD8gnXRmBP97M2vcJc-19ZmohTdTogG6C4HBw==',
     likes: 0,
     dislikes: 0,
 };
@@ -74,6 +77,9 @@ dislikesEl2.onclick = function () {
 };
 postVideoBodyEl.appendChild(likesEl2);
 postVideoBodyEl.appendChild(dislikesEl2);
+
+rootEl.appendChild(postVideoEl);
+console.log(postVideoEl);
 
 const postAudio = {
     content: 'Аудио на страничке',
@@ -113,14 +119,5 @@ dislikesEl3.onclick = function () {
 postAudioBodyEl.appendChild(likesEl3);
 postAudioBodyEl.appendChild(dislikesEl3);
 
-const postSelection = postVideoEl;
-
-if (postSelection == postAudioEl) {
-    rootEl.appendChild(postAudioEl);
-} else if (postSelection == postImgEl) {
-    rootEl.appendChild(postImgEl);
-} else {
-    rootEl.appendChild(postVideoEl);
-
-};
-console.log(postSelection);
+rootEl.appendChild(postAudioEl);
+console.log(postAudioEl);
